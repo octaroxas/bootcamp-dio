@@ -3,8 +3,8 @@ import { styles } from './styles'
 import { Text, View, SafeAreaView, Image, TextInput, TouchableOpacity } from 'react-native'
 import v from './../../assets/fundo.png'
 import { useForm } from 'react-hook-form'
-import Input from '../../components/Input'
-import Button from '../../components/Button'
+import Input from './../../components/Input'
+import Button from './../../components/Button'
 
 export default function Login() {
 
