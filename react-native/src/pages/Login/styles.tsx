@@ -31,7 +31,8 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         flex: 1,
         justifyContent: 'space-between',
-        alignItems: "center"
+        alignItems: "center",
+        marginTop: 20
     },
     link: {
         backgroundColor: '#f1f1f1',

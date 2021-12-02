@@ -34,13 +34,13 @@ export default function Login() {
 
                 <Button onPress={handleSubmit(sub)}>Entrar</Button>
 
-                <Text style={{ backgroundColor: 'grey', padding: 20, color: '#fff' }}>
-                    {form}
-                </Text>
                 <View style={styles.linksContainer}>
                     <Text style={styles.link}>Esqueci a senha</Text>
                     <Text style={styles.link}>Não tenho cadastro</Text>
                 </View>
+                <Text style={{ backgroundColor: 'grey', padding: 20, color: '#fff' }}>
+                    {form}
+                </Text>
             </View>
         </SafeAreaView>
     )
