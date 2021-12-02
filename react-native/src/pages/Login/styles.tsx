@@ -25,18 +25,6 @@ export const styles = StyleSheet.create({
         marginBottom: 90,
         fontWeight: "bold"
     },
-    input: {
-        width: '100%',
-        padding: 20,
-        backgroundColor: '#f1f1f1',
-        borderRadius: 10
-    },
-    but: {
-        width: '100%',
-        padding: 20,
-        backgroundColor: '#6E4BE9',
-        borderRadius: 10
-    },
     linksContainer: {
         width: '100%',
         display: 'flex',
