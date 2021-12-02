@@ -4,7 +4,7 @@ import { styles } from './styles'
 export default function Button({ children, onPress }) {
     return (
         <TouchableOpacity style={styles.but} onPress={onPress}>
-            <Text>{children}</Text>
+            <Text style={styles.textBut}>{children}</Text>
         </TouchableOpacity>
     )
 }

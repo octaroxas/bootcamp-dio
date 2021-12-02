@@ -7,4 +7,9 @@ export const styles = StyleSheet.create({
         backgroundColor: '#6E4BE9',
         borderRadius: 10
     },
+    textBut: {
+        textAlign: 'center',
+        fontWeight: "bold",
+        color: 'white'
+    }
 })
