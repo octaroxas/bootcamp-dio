@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    background-color: var(--background-1);
+}
+
+:root {
+    --background-1: rgb(221, 214, 242);
+    --background-2: rgb(79, 36, 208);
+    --yellow: yellow;
+    --blue: blue;
+    --red: red;
+    --green: green;
+}
+
+.header {
+    background-color: var(--background-2);
+    text-align: left;
+    padding: 1rem;
+    font-family: Roboto;
+    box-shadow: grey 0px 0px 20px ;
+}
+
+.container-header {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    margin: 1rem;
+    padding: 2rem;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    max-height: 300px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    box-shadow: grey 0px 0px 20px ;
+}
+
+article p {
+    font-size: 15px;
+}
+
+.profile {
+    max-width: 7rem;
+    border-radius: 100%;
+}
+
+.title {
+    font-weight: bold;
+    color: white;
+}
+
+.desc {
+    color: white;
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    grid-gap: 5px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.blue {
+    grid-area: 'azul';
+    background-color: var(--blue);
+    border-top-left-radius: 100%;
+}
+.red {
+    grid-area: 'vermelho';
+    background-color: var(--red);
+    border-bottom-left-radius: 100%;
+}
+.yellow {
+    grid-area: 'amarelo';
+    background-color: var(--yellow);
+    border-top-right-radius: 100%;
+}
+.green {
+    grid-area: 'verde';
+    background-color: var(--green);
+    border-bottom-right-radius: 100%;
+}
+
+.selected {
+    opacity: 0.4;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 2rem;
+    background-color: rgb(19, 19, 19);
+    font-family: Roboto;
+    color: white
+}
+
+a {
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 10px;
+    color: rgb(77, 77, 77);
+}
+
+a:hover {
+    opacity: 80%;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}

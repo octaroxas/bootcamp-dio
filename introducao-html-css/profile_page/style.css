@@ -1,0 +1,98 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #1B1A1F;
+    color: white;
+    max-width: 50%;
+    margin: auto; /* mantem o body com 80% de largura no centro (muito util)*/
+}
+
+.profile {
+    padding: 2rem;
+    background-color: #570EF2;
+    border-radius: 10px;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-text {
+    align-self: flex-end;
+}
+
+.nome {
+
+}
+
+.contatos {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.contato-item {
+    background-color: #570EF2;
+}
+
+.contato-item:hover {
+    opacity: 70%;
+}
+
+.img-profile {
+    width: 10rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    background-color: #35313c;
+    border-radius: 10px;
+    padding: 2vh 2vh 2vh 2vh;
+}
+
+.sobre {
+    margin-top: 4vh;
+}
+
+.sobre p {
+    margin-top: 2vh;
+}
+
+.title-projects-list {
+    margin-top: 2rem;
+}
+
+.project {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.img-project {
+    width: 50%;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+}
+
+.link-project {
+    text-align: right;
+}
+
+footer {
+
+}
