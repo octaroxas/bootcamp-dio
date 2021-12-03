@@ -15,13 +15,18 @@ export default function Home() {
     const addItem = () => {
         const n = document.getElementById('item').value;
         const v = Number(document.getElementById('valor').value);
+        const f = Number(document.getElementById('frete').value);
 
         if(n !== undefined && v !== undefined) {
             if(n !== '' && v !== '') {
-                setItens(itens.concat({name: n, value: v}))
-                setTotal(total+v)
+                setItens(itens.concat({name: n, value: v, frete: f}))
+                setTotal(total+v+f)
             }
         }
+
+        document.getElementById('item').value = '';
+        document.getElementById('valor').value= undefined;
+        document.getElementById('frete').value= undefined;
     }
 
     const delitem = (index) => {
@@ -42,6 +47,7 @@ export default function Home() {
                 }}>
                     <Input name="nome" placeholder="Nome" id="item" type="text" />
                     <Input name="valor" placeholder="Valor" id="valor" type="number" />
+                    <Input name="frete" placeholder="Frete" id="frete" type="number" />
                     <Buttom id="" type="button" onclick={addItem} text="Add">Add</Buttom>
                 </div>
 
@@ -56,7 +62,15 @@ export default function Home() {
 
                 <div className="list-itens">
                     {itens?.map((item,index) => ( // se o atributo content estiver definido faça iterações com o map
-                        <Item key={index} id={index} i={index} name={item.name} valor={item.value} delf={delitem} />
+                        <Item 
+                            key={index} 
+                            id={index} 
+                            i={index} 
+                            name={item.name} 
+                            valor={item.value} 
+                            delf={delitem} 
+                            frete={item.frete}
+                        />
                     ))}
                 </div>
             </section>
