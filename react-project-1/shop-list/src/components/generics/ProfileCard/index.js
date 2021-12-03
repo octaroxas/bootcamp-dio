@@ -5,7 +5,7 @@ export default function ProfileCard () {
     return (
         <>
         <div className="card">
-            <img className="profile" src="https://github.com/octaroxas.png" />
+            <img className="profile" src="https://github.com/octaroxas.png" alt="Octa"/>
 
             <article className="card-article">
                 <header>
